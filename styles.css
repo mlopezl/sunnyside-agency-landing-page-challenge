@@ -1,320 +1,370 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
-:root{
-    --Red-400: hsl(7, 99%, 70%);
-    --Yellow-500: hsl(51, 100%, 49%);
-    --Green-800: hsl(167, 40%, 24%); /*Graphic designer text*/
-    --Blue-800: hsl(198, 62%, 26%); /*Photography text*/
-    --Blue-hover: hsl(200, 100%, 72%);
-    --Green-500: hsl(168, 37%, 58%); /*Footer*/
-    --Grey-950: hsl(212, 27%, 19%);
-    --Grey-600: hsl(213, 9%, 39%);
-    --Grey-550: hsl(232, 10%, 55%);
-    --Grey-400: hsl(210, 4%, 67%);
-    --White: hsl(0, 100%, 100%);
+:root {
+  --Red-400: hsl(7, 99%, 70%);
+  --Yellow-500: hsl(51, 100%, 49%);
+  --Green-800: hsl(167, 40%, 24%); /*Graphic designer text*/
+  --Blue-800: hsl(198, 62%, 26%); /*Photography text*/
+  --Blue-hover: hsl(200, 100%, 72%);
+  --Green-500: hsl(168, 37%, 58%); /*Footer*/
+  --Grey-950: hsl(212, 27%, 19%);
+  --Grey-600: hsl(213, 9%, 39%);
+  --Grey-550: hsl(232, 10%, 55%);
+  --Grey-400: hsl(210, 4%, 67%);
+  --White: hsl(0, 100%, 100%);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 18px;
+html {
+  font-size: 18px;
 }
 
-body{
-    font-family: "Barlow", sans-serif;
-    background-color: var(--White);
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: var(--White);
 }
 
-.container{
-    width: 100%;
-    min-height: 100vh;
+.container {
+  width: 100%;
+  min-height: 100vh;
 }
 
-.hero{
-    width: 100%;
-    height: 700px;
-    background-image: url(./images/desktop/image-header.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.hero {
+  width: 100%;
+  height: 700px;
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.hero__nav{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 40px;
+.hero__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
-.hero__logo{
-    width: 180px;
-    height: 40px;
+.hero__logo {
+  width: 180px;
+  height: 40px;
 }
 
-.hero__menu{
-    width: 40%;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    margin-bottom: 100px ;
+.hero__menu {
+  width: 40%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin-bottom: 100px;
 }
 
-.hero__menu li{
-    width: 110px;
-    height: 40px;
-    display: grid;
-    place-content: center;
-    border-radius: 20px;
+.hero__menu li {
+  width: 110px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  border-radius: 20px;
 }
 
 .hero__menu li:hover,
-.hero__menu li:hover a{
-    background-color: var(--Blue-hover);
-    color: var(--White);
+.hero__menu li:hover a {
+  background-color: var(--Blue-hover);
+  color: var(--White);
 }
 
-.hero__menu .active{
-     background-color: var(--White);
+.hero__menu .active {
+  background-color: var(--White);
 }
 
-
-.hero__menu a{
-    text-decoration: none;
-    color: var(--White); 
+.hero__menu a {
+  text-decoration: none;
+  color: var(--White);
 }
 
-.hero__menu .active a{
-    color: var(--Grey-950);
-    text-transform: uppercase;
-    font-family: "Fraunces", serif;
-    font-size: 0.8rem;
-    font-weight: bold;
+.hero__menu .active a {
+  color: var(--Grey-950);
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
-.hero__title{
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    font-family: "Fraunces", serif;
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--White);
-    letter-spacing: 5px;
-    margin-bottom: 30px;
+.hero__title {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--White);
+  letter-spacing: 5px;
+  margin-bottom: 30px;
 }
 
-.hero__arrow{
-    display: block;
-    margin: 0 auto;
+.hero__arrow {
+  display: block;
+  margin: 0 auto;
 }
 
-.services{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: "Fraunces", serif;
+.services {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Fraunces", serif;
 }
 
-.service{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 100px;
-    gap: 30px;
+.service {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 100px;
+  gap: 30px;
 }
 
-.service h2{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--Grey-950);
-    text-shadow: 1px 1px 1px  var(--Grey-950);
+.service h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  color: var(--Grey-950);
+  text-shadow: 1px 1px 1px var(--Grey-950);
 }
 
-.service p{
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--Grey-600);
+.service p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--Grey-600);
 }
 
-.service__link{
-    width: 140px;
-    background-color: var(--White);
-    border: none;
-    border-bottom: 8px solid var(--Yellow-500);
-    line-height: 1px;
+.service__link {
+  width: 140px;
+  background-color: var(--White);
+  border: none;
+  border-bottom: 8px solid var(--Yellow-500);
+  line-height: 1px;
+  font-size: 1vw;
 }
 
-.service__link:hover{
-    border-bottom: 10px solid var(--Yellow-500);
+.service__link:hover {
+  border-bottom: 10px solid var(--Yellow-500);
 }
 
-.service__link a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Fraunces", serif;
-    font-weight: bold;
-    font-size: 1rem;
-    color: var(--Grey-950);
-    text-align: center;
+.service__link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--Grey-950);
+  text-align: center;
 }
 
 .service__link--stand {
-    border-bottom: 8px solid var(--Red-400);
+  border-bottom: 8px solid var(--Red-400);
 }
 
 .service__link--stand:hover {
-    border-bottom: 10px solid var(--Red-400);
+  border-bottom: 10px solid var(--Red-400);
 }
 
-.service__image{
-    width: 100%;
+.service__image {
+  width: 100%;
 }
 
-.service__role{
-    width: 100%;
-    height: 580px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    padding: 0px 50px 50px 50px;
-    gap: 30px;
-    text-align: center;
+.service__role {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 320px 50px 50px 50px;
+  gap: 30px;
+  text-align: center;
 }
 
-.service__role h2{
-    font-size: 2rem;
+.service__role h2 {
+  font-size: 4vw;
 }
 
-.service__role p{
-    width: 70%;
+.service__role p {
+  width: 100%;
 }
 
-.service__role--graphic{
-    background-image: url(./images/desktop/image-graphic-design.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.service__role--graphic {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .service__role--graphic h2,
-.service__role--graphic p{
-    color: var(--Green-800);
+.service__role--graphic p {
+  color: var(--Green-800);
 }
 
-.service__role--photography{
-    background-image: url(./images/desktop/image-photography.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.service__role--photography {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .service__role--photography h2,
-.service__role--photography p{
-    color: var(--Blue-800);
+.service__role--photography p {
+  color: var(--Blue-800);
 }
 
-.testimonials__title{
-    text-align: center;
-    height: 160px;
-    padding-top: 100px;
-    text-transform: uppercase;
-    font-family: "Fraunces", serif;
-    font-size: 2rem;
-    letter-spacing: 5px;
-    color: var(--Grey-400);
+.testimonials__title {
+  text-align: center;
+  height: 160px;
+  padding-top: 100px;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-size: 3vw;
+  letter-spacing: 5px;
+  color: var(--Grey-400);
 }
 
-.testimonial__articles{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.testimonial__articles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  flex-wrap: wrap;
+}
+
+.testimonial__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 335px;
+  padding: 10px;
+}
+
+.testimonial__card img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.testimonial__card p {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  color: var(--Grey-600);
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+}
+
+.testimonial__card .testimonial__name {
+  color: var(--Grey-950);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.testimonial__card .testimonial__role {
+  color: var(--Grey-400);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: var(--Green-500);
+  color: var(--Green-800);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer__nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.footer__nav ul a {
+  text-decoration: none;
+  color: var(--Green-800);
+}
+
+.footer__nav ul a:hover {
+  color: var(--White);
+}
+
+.footer__social {
+  display: flex;
+  gap: 30px;
+}
+
+.footer__social a:hover path {
+  fill: var(--White);
+}
+
+@media (max-width: 1000px) {
+  .hero {
     height: 500px;
-    flex-wrap: wrap;
-}
+  }
 
-.testimonial__card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    width: 400px;
-}
+  .hero__menu {
+    width: 50%;
+  }
 
-.testimonial__card img{
-    width: 80px;
-    border-radius: 50%;
-}
+  .service {
+    padding: 0px 50px;
+    gap: 20px;
+  }
 
-.testimonial__card p{
-    text-align: center;
-    font-family: "Fraunces", serif;
-    color: var(--Grey-600);
-    font-weight: 600;
-    line-height: 30px;
+  .service p {
+    font-size: 0.9rem;
+  }
+
+  .service__role {
+    height: 400px;
+    padding: 220px 30px 30px 30px;
+    gap: 20px;
+  }
+
+  .service__role p {
+    font-size: 0.9rem;
+  }
+
+  .testimonials {
+    height: 800px;
+  }
+  .testimonials__title {
     margin-bottom: 20px;
-}
+  }
 
-.testimonial__card .testimonial__name{
-    color: var(--Grey-950);
-    font-weight: bold;
-    margin-bottom: 20px;
-}
+  .testimonial__card {
+    gap: 10px;
+  }
 
-.testimonial__card .testimonial__role{
-    color: var(--Grey-400);
-}
+  .testimonial__card p {
+    margin-bottom: 10px;
+  }
 
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.gallery img{
-    width: 100%;
-}
-
-.footer{
-    width: 100%;
-    height: 300px;
-    background-color: var(--Green-500);
-    color: var(--Green-800);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.footer__nav ul{
-    display: flex;
-    list-style: none;
-    gap: 50px;
-    margin-bottom: 30px;
-}
-
-.footer__nav ul a{
-    text-decoration: none;
-    color: var(--Green-800);
-}
-
-.footer__nav ul a:hover{
-    color: var(--White);
-}
-
-.footer__social{
-    display: flex;
-    gap: 30px;
-}
-
-.footer__social a:hover path{
-    fill: var(--White);
+  .testimonial__card .testimonial__name {
+    margin-bottom: 10px;
+  }
 }
