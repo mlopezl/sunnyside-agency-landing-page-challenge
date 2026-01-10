@@ -49,6 +49,7 @@ body {
   width: 90%;
   margin: 0 auto;
   padding-top: 40px;
+  margin-bottom: 100px;
 }
 
 .hero__logo {
@@ -61,7 +62,12 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  margin-bottom: 100px;
+}
+
+.hero__hamburger-icon{
+  width: 40px;
+  height: 30px;
+  display: none;
 }
 
 .hero__menu li {
@@ -175,6 +181,10 @@ body {
 
 .service__image {
   width: 100%;
+}
+
+.service__image__mobile{
+  display: none;
 }
 
 .service__role {
@@ -366,5 +376,85 @@ body {
 
   .testimonial__card .testimonial__name {
     margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 760px){
+
+  .hero__nav {
+    margin-bottom: 50px;
+  }
+  .hero__menu {
+    display: none;
+  }
+
+  .hero__hamburger-icon{
+    display: block;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .service{
+    height: 400px;
+  }
+
+  .service h2,
+  .service__role h2 {
+    font-size: 1.5rem;
+  }
+
+  .service__mobile--1{
+    grid-row: 1 / 2;
+  }
+
+  .testimonials__title {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 669px){
+   .testimonials{
+    height: 1150px;
+  }
+
+  .hero__logo {
+    width: 140px;
+    height: 30px;
+  }
+
+  .hero__hamburger-icon{
+    width: 30px;
+    height: 20px;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 425px){
+  .hero {
+    background-image: url(./images/mobile/image-header.jpg);
+  }
+
+  .service__role{
+    height: 600px;
+    padding-top: 400px;
+  }
+
+  .service__role--graphic {
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+  }
+
+  .service__role--photography {
+    background-image: url(./images/mobile/image-photography.jpg);
   }
 }
