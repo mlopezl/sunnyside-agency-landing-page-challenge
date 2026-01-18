@@ -126,10 +126,12 @@ body {
 }
 
 .hero__menu li:hover,
-.hero__menu li:hover a {
+.hero__menu li:hover a,
+.hero__menu li:focus-within,
+.hero__menu li a:focus {
   background-color: var(--Blue-hover);
   color: var(--White);
-}
+} 
 
 .hero__menu .active {
   background-color: var(--White);
@@ -138,6 +140,7 @@ body {
 .hero__menu a {
   text-decoration: none;
   color: var(--White);
+  outline: none;
 }
 
 .hero__menu .active a {
@@ -199,7 +202,8 @@ body {
   color: var(--Grey-600);
 }
 
-.service__link {
+.service__link,
+.service__link--stand {
   width: 140px;
   background-color: var(--White);
   border: none;
@@ -208,11 +212,8 @@ body {
   font-size: 1vw;
 }
 
-.service__link:hover {
-  border-bottom: 10px solid var(--Yellow-500);
-}
-
-.service__link a {
+.service__link a,
+.service__link--stand a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Fraunces", serif;
@@ -222,12 +223,28 @@ body {
   text-align: center;
 }
 
+.service__link:hover,
+.service__link:focus-within{
+  border-bottom: 10px solid var(--Yellow-500);
+  outline: none;
+}
+
+.service__link a:focus {
+  outline: none;
+}
+
 .service__link--stand {
   border-bottom: 8px solid var(--Red-400);
 }
 
-.service__link--stand:hover {
+.service__link--stand:hover,
+.service__link--stand:focus-within {
   border-bottom: 10px solid var(--Red-400);
+  outline: none;
+}
+
+.service__link--stand a:focus{
+  outline: none;
 }
 
 .service__image {
@@ -369,8 +386,14 @@ body {
   color: var(--Green-800);
 }
 
-.footer__nav ul a:hover {
+.footer__nav ul li:focus-within{
+  outline: none;
+}
+
+.footer__nav ul a:hover,
+.footer__nav ul a:focus {
   color: var(--White);
+  outline: none;
 }
 
 .footer__social {
@@ -378,7 +401,16 @@ body {
   gap: 30px;
 }
 
-.footer__social a:hover path {
+.footer__social li:focus-within{
+  outline: none;
+}
+
+.footer__social a:focus{
+  outline: none;
+}
+
+.footer__social a:hover path,
+.footer__social a:focus path{
   fill: var(--White);
 }
 
